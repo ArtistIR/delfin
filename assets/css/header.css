@@ -1,0 +1,136 @@
+.header{
+    display: block;
+    width: 100vw;
+    background: #002451;
+    position: fixed;
+    z-index: 100;
+}
+.header_fixed {
+    top: 0;
+}
+.header_logo{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.top_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: center;
+    
+    height: 99px;
+}
+.top_header a{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+.logo_inner{
+    padding: 21px 0;
+}
+.logo_inner img{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.logo_inner h1{
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-left: 16px;
+}
+.adres_inner img{
+    width: 16px;
+    height: 20px;
+}
+.adres_inner h5{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding-left: 12px;
+}
+.contact_fax{
+    display: flex;
+    text-align: right;
+    color: #fff;
+    justify-content: end;
+}
+.contact_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact_inner a{
+    color: #fff;
+}
+mark.orange{
+    color: #FF6142;
+    background-color: transparent;
+    padding-right: 5px;
+}
+.bottom_header{
+    max-width: 100vw;
+    border-top: 1px #133E73 solid;
+}
+.bh_fix{
+    background-color: #fff;
+    color: #2E2E2E !important;
+}
+.bh_fix_mi{
+    color: #2E2E2E !important;
+    display: block;
+    min-height: 50px;
+    line-height: 50px;
+}
+.main_menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.main_menu ul li{
+    list-style: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 0;
+    margin: auto 0;
+    position: relative;
+    transition: all .2s linear;
+}
+.menu_first_item{
+    display: none;
+}
+.main_menu ul li a{
+    display: block;
+    height: 100%;
+    transition: all .2s linear;
+    color: #fff;
+}
+.main_menu ul li:hover::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FF6142;
+    position: absolute;
+    bottom: -2px;
+
+    position: absolute;
+    z-index: 4;
+}
+.main_menu ul li:hover a{
+    color: #FF6142 !important;
+}
+.main_menu ul li:hover a.bh_fix_mi{
+    color: #FF6142 !important;
+}

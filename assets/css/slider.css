@@ -1,0 +1,178 @@
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+}
+.slick-dots li{
+    display: block;
+    width: 56px;
+    height: 56px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    background-color: #E5322E;
+}
+/* Элемент точки */
+.slick-dots li button{}
+
+/*Конкретный слайдер*/
+.intro_slider{
+    position: relative;
+}
+
+
+
+.intro{
+    position: relative;
+}
+.intro_slide{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-height: 820px;
+    overflow: hidden;
+}
+.intro_slide img{
+    width: 100%;
+    height: 100%;
+    max-height: 820px;
+    object-fit: cover;
+}
+.intro_slide::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url('../img/slider/bg.png') no-repeat right;
+    background-size: cover;
+}
+.intro_slider_info{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    max-width:930px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.intro_slider_info h3{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+.intro_slider_info::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: -55px;
+    width: 44px;
+    height: 44px;
+    background: url('../img/decor/star.svg');
+}
+
+.slider_wrapper{
+    position: absolute;
+    z-index: 1;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 50px;
+    
+    display: flex;
+    justify-content: end;
+
+    width: 100%;
+    max-width: 1320px;
+}
+.slider-navigation{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-left: auto;
+}
+.btn_slide{
+    font-size: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    opacity: .5;
+    transition:all .15s linear;
+}
+
+.btn_slide.prev_slide{
+    right: 0;
+    background: url('../img/decor/arrow_l.svg') no-repeat center;
+}
+.btn_slide.next_slide{
+    left: 0;
+    background: url('../img/decor/arrow_r.svg') no-repeat center;
+}
+.btn_slide:hover{
+    opacity: 1;
+}
+.slide_nav_item ul{
+    list-style: none;
+}
+.slide_nav_item ul li button{
+    display: block;
+    width: 56px;
+    height: 56px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 56px;
+    color: #FFFFFF;
+    text-align: center;
+
+    background: none;
+    border: none;
+}
+.slide_nav_item ul li button:hover{
+    background-color: #E5322E;
+}

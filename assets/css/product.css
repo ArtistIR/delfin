@@ -1,0 +1,106 @@
+.title_inner{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.btn_product{
+    display: block;
+    width: 64px;
+    height: 64px;
+    font-size: 25px;
+    line-height: 62px;
+}
+.product_slide_subtitle{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #505050;
+}
+.product_slide{
+    position: relative;
+    display: block;
+    max-width: 645px;
+    height: 360px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 22px;
+}
+.product_slide img{
+    max-height: 320px;
+}
+.product_slide_info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 48px;
+}
+.product_title_slide{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.product_subtitle{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #8EBEFF;
+    padding-bottom: 16px;
+    padding-top: 8px;
+    display: block;
+    max-width: 250px;
+}
+.product_slider_navigation{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.product_btn_slide{
+    margin-top: 96px;
+    border: none;
+    opacity: 0.6;
+}
+.product_btn_slide:hover{
+    opacity: 1;
+}
+.product_btn_slide.prev_slide{
+    display: block;
+    margin-right: 40px;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    background: url('../img/decor/arrow_l_gray.svg') no-repeat center;
+}
+.product_btn_slide.next_slide{
+    display: block;
+    margin-left: 40px;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    background: url('../img/decor/arrow_r_gray.svg') no-repeat center;
+}
+.btn_slide:hover{
+    opacity: 1;
+}
+.btn_product_main{
+    width: 376px;
+    height: 64px;
+    font-size: 18px;
+}
+.btn div, 
+.btn p{
+    margin: auto 0;
+}
+.product_wrapper{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
