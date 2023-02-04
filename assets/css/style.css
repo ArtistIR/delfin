@@ -41,6 +41,7 @@ a{
     background-color: #FF6142;
     color: #fff;
 }
-body{
+body,
+html{
     overflow-x: hidden;
 }
